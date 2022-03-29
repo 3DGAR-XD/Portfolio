@@ -1,5 +1,5 @@
 // Recuerda que hay que cambiar esto
-if(window.location.href === "http://localhost:8081/")window.location.href += "#home";
+if(window.location.href === "https://3dgar-xd.github.io/Portfolio")window.location.href += "/#home";
 // Animation
 $(".name").textillate();
 
