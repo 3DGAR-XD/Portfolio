@@ -1,3 +1,12 @@
+@media (max-width:806px) {
+	nav ul li a {
+		width: 50%;
+	}
+	header div {
+		width: 100%;
+	}
+
+}
 @keyframes down {
 	0% {
 		transform: translate(0, -70vh);
@@ -8,7 +17,7 @@
 		transform: translate(0, 1vh);
 	}
 }
-html {overflow:hidden}
+html {/* overflow:hidden */}
 .img-list {
 	width: 10%;
 }
@@ -150,4 +159,8 @@ a {
 }
 .img-contact {
 	width: 10%;
+}
+.modal-dialog-scrollable{
+	width: 90%!important;
+	height: 90%!important;
 }

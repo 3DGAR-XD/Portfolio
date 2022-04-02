@@ -108,9 +108,56 @@ templateLaptop = `
 {{~}}
 `;
 
+templateMobile = `
+{{~ it: data }}
+	<div class="modal fade" id="{{=data.idModal}}" tabindex="-1" aria-labelledby="{{=data.idModal}}" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable mx-auto">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="{{=data.idModal}}">{{=data.modalTitle}}</h5>
+				</div>
+				<div class="modal-body">
+					<div class="row align-items-center">
+						<div class="col-6">
+							<h4>{{=data.modalText}}</h4>
+							<img src="{{=data.modalImg}}" alt="{{=data.modalTitle}}" class="img-modal">
+						</div>
+						<div class="col-6 my-2">
+							<span class="my-2">Nivel de conocimientos (%)</span>
+							{{~ data.knowledges: knowledge }}
+								<div class="my-2">
+									<h4>{{=knowledge.name}}</h4>
+									<div class="progress position-relative">
+										<div class="progress-bar" role="progressbar" aria-valuenow="{{=knowledge.level}}" aria-valuemin="0" aria-valuemax="100"></div>
+										<span class="position-absolute m-auto bold">{{=knowledge.level}}%</span>
+									</div>
+								</div>
+							{{~}}
+							<span>Lo que domino de estas tecnologías:</span>
+							<ol class="list-group list-group-numbered">
+								{{~ data.domains: domain}}
+									<li class="list-group-item">{{=domain}}</li>
+								{{~}}
+							</ol>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-outline-orange" data-bs-dismiss="modal">Volver</button>
+				</div>
+			</div>
+		</div>
+	</div>
+{{~}}
+`;
+
 if (window.innerWidth >= 992) {
 	const tempFunc = doT.template(templateLaptop);
 	const html = tempFunc(data);
-	// console.log(html)
 	document.getElementById("modals-laptop").innerHTML = html;
+}
+else {
+	const tempFunc = doT.template(templateMobile);
+	const html = tempFunc(data);
+	document.getElementById("modals-mobile").innerHTML = html;
 }
