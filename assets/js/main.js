@@ -1,6 +1,6 @@
 // evento al cargar el dom
 $(document).ready(function() {
-	if (window.location.href == window.location.origin + window.location.pathname) window.location.href = `${window.location.origin + window.location.pathname}#home`;
+	if (window.location.href == window.location.origin + window.location.pathname) window.location.href += "#home";
 })
 
 // Animation
@@ -106,11 +106,11 @@ templateLaptop = `
 		</div>
 	</div>
 {{~}}
-
 `;
+
 if (window.innerWidth >= 992) {
 	const tempFunc = doT.template(templateLaptop);
 	const html = tempFunc(data);
-	console.log(html)
+	// console.log(html)
 	document.getElementById("modals-laptop").innerHTML = html;
 }
