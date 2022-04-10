@@ -1,8 +1,10 @@
-// evento al cargar el dom
-$(document).ready(function() {
-	if (window.location.href == window.location.origin + window.location.pathname) window.location.href += "#home";
-})
-
+if (window.location.href == window.location.origin + window.location.pathname) window.location.href += "#home";
+if (window.innerWidth >= 992) {
+	$("#mobile").remove();
+}
+else {
+	$("#laptop").remove();
+}
 // Animation
 $(".name").textillate();
 

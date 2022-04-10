@@ -2,7 +2,7 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<title>Edgar Luna Desarrollador Web Portafolio</title>
 		<meta name="description" content="Desarrollador Front-End Junior, puedo hacer tu portafolio, hacer la parte interactiva de tu sitio web o incluso participar en proyectos de desarrollo.">
 		<meta name="robots" content="index, follow">
@@ -24,21 +24,21 @@
 		<link rel="stylesheet" href="./assets/css/styles.css">
 	</head>
 	<body>
-		<div id="site">
+		<div id="laptop">
 			<div class="row vw-300">
 				<div class="vw-100 justify-content-between col-4"></div>
 				<header class="vh-100 d-flex flex-column justify-content-center col-4" id="home">
-					<div class="container w-75 text-center text-md-end my-3">
+					<div class="container w-75 text-end my-3">
 						<hgroup>
 							<h1 class="name">EDGAR LUNA</h1>
 							<h2>Desarrollador Web Junior</h2>
 						</hgroup>
 					</div>
 					<nav class="text-center">
-						<ul class="list-group d-block d-lg-inline-block">
-							<li class="d-block d-lg-inline my-2 mx-lg-3"><a class="btn btn-orange" href="#about-me">Quieres saber quien soy ¡Clickeame!</a></li>
-							<li class="d-block d-lg-inline my-2 mx-lg-3"><a class="btn btn-orange" href="#projects">¡Mira mis proyectos!</a></li>
-							<li class="d-block d-lg-inline my-2 mx-lg-3"><a class="btn btn-orange" href="#contact-me">Vamos al grano ¡Contactame!</a></li>
+						<ul class="list-group d-inline-block">
+							<li class="d-inline my-2 mx-3"><a class="btn btn-orange" href="#about-me">Quieres saber quien soy ¡Clickeame!</a></li>
+							<li class="d-inline my-2 mx-3"><a class="btn btn-orange" href="#projects">¡Mira mis proyectos!</a></li>
+							<li class="d-inline my-2 mx-3"><a class="btn btn-orange" href="#contact-me">Vamos al grano ¡Contactame!</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -95,7 +95,7 @@
 							<div class="row g-3 mt-1">
 								<div class="col">
 									<div class="card h-100">
-										<img src="./assets/images/cq.webp" class="card-img-top card-img" alt="Country Quiz">
+										<img src="./assets/images/cq.webp" class="card-img-top card-img mt-1" alt="Country Quiz">
 										<div class="card-body">
 											<h5 class="card-title">Country Quiz</h5>
 											<p class="card-text text-justify">Este es mi proyecto más complejo el cual he remodelado usando bootstrap, async-await y manejo de errores.</p>
@@ -111,7 +111,7 @@
 								</div>
 								<div class="col">
 									<div class="card h-100">
-										<img src="./assets/images/guess.webp" class="card-img-top card-img" alt="Guess the number">
+										<img src="./assets/images/guess.webp" class="card-img-top card-img mt-1" alt="Guess the number">
 										<div class="card-body">
 											<h5 class="card-title">Guess The Number</h5>
 											<p class="card-text text-justify">Este es un proyecto donde profundize más la lógica y los eventos de Javascript, creando un minijuego de números</p>
@@ -127,7 +127,7 @@
 								</div>
 								<div class="col">
 									<div class="card h-100">
-										<img src="./assets/images/facebook.webp" class="card-img-top card-img" alt="Facebook Home Page 100% Js">
+										<img src="./assets/images/facebook.webp" class="card-img-top card-img mt-1" alt="Facebook Home Page 100% Js">
 										<div class="card-body">
 											<h5 class="card-title">Facebook Home Page en Javascript</h5>
 											<p class="card-text text-justify">El proyecto que me ayudo a entender como funciona Javascript. NO ES UN CLON DE FACEBOOK!! solo es la página de inicio hecha con lo primero que aprendí en Javascript</p>
@@ -187,84 +187,107 @@
 				<div class="vw-100 justify-content-between col-4"></div>
 			</div>
 		</div>
-
-
-
-
-
-
-
-
-
-
-		<!-- <div id="mobile" class="d-block d-lg-none">
-			<div class="row vh-400">
-				<section class="vh-100 d-flex flex-row justify-content-between col-12" id="about-me">
-					<div class="container w-100 text-center my-auto">
+		<div id="mobile">
+			<div class="vh-100">
+				<section class="h-100 d-flex flex-row justify-content-between" id="about-me">
+					<div class="container w-75 text-center my-auto">
 						<h3>¿Quien Soy?</h3>
 						<p class="lead">
 							Soy un desarrollador web jr, con experiencia en el desarrollo de páginas y aplicaciones web.
 							<br>
 							<br>
-							<div class="d-sm-block d-none">
-								Me gusta aprender nuevas tecnologías para mejorar mi desempeño y crear nuevas experiencias.
-								<br>
-								<br>
-							</div>
+							Me gusta aprender nuevas tecnologías para mejorar mi desempeño y crear nuevas experiencias.
+							<br>
+							<br>
 							Mi stack de trabajo y las tecnologias que manejo son:
-							<ul class="d-inline-block row">
-								<li class="d-inline mx-2 col-4 w-auto"><img src="./assets/images/stack-web-basico.webp" alt="Stack Web Básico" class="img-list" data-bs-toggle="modal" data-bs-target="#stack-basico"></li>
-								<li class="d-inline mx-2 col-4 w-auto"><img src="./assets/images/bootstrap.webp" alt="Frameworks Css" class="img-list" data-bs-toggle="modal" data-bs-target="#css"></li>
-								<li class="d-inline mx-2 col-4 w-auto"><img src="./assets/images/backend.webp" alt="Backend" class="img-list" data-bs-toggle="modal" data-bs-target="#backend"></li>
-								<li class="d-inline mx-2 col-4 w-auto"><img src="./assets/images/db.webp" alt="Bases de Datos" class="img-list" data-bs-toggle="modal" data-bs-target="#db"></li>
-								<div class="d-sm-block d-none">
-									<li class="d-inline mx-2 col-4 w-auto"><img src="./assets/images/jquery.webp" alt="Frameworks Javascript" class="img-list" data-bs-toggle="modal" data-bs-target="#javascript"></li>
-									<li class="d-inline mx-2 col-4 w-auto"><img src="./assets/images/linux.webp" alt="Linux OS" class="img-list" data-bs-toggle="modal" data-bs-target="#linux"></li>
-									<li class="d-inline mx-2 col-4 w-auto"><img src="./assets/images/git.webp" alt="Sistemas de Control de Versiones" class="img-list" data-bs-toggle="modal" data-bs-target="#git"></li>
-								</div>
+							<ul class="d-inline-block">
+								<li class="d-inline mx-2"><img src="./assets/images/stack-web-basico.webp" alt="Stack Web Básico" class="img-list" data-bs-toggle="modal" data-bs-target="#stack-basico"></li>
+								<li class="d-inline mx-2"><img src="./assets/images/jquery.webp" alt="Frameworks Javascript" class="img-list" data-bs-toggle="modal" data-bs-target="#javascript"></li>
+								<li class="d-inline mx-2"><img src="./assets/images/bootstrap.webp" alt="Frameworks Css" class="img-list" data-bs-toggle="modal" data-bs-target="#css"></li>
+								<li class="d-inline mx-2"><img src="./assets/images/backend.webp" alt="Backend" class="img-list" data-bs-toggle="modal" data-bs-target="#backend"></li>
+								<li class="d-inline mx-2"><img src="./assets/images/db.webp" alt="Bases de Datos" class="img-list" data-bs-toggle="modal" data-bs-target="#db"></li>
+								<li class="d-inline mx-2"><img src="./assets/images/linux.webp" alt="Linux OS" class="img-list" data-bs-toggle="modal" data-bs-target="#linux"></li>
+								<li class="d-inline mx-2"><img src="./assets/images/git.webp" alt="Sistemas de Control de Versiones" class="img-list" data-bs-toggle="modal" data-bs-target="#git"></li>
 							</ul>
 							<div id="modals-mobile"></div>
-							<div class="d-md-block d-none">
-								<br>
-								<br>
-								Me gustaría aprender a usar Node y React, para aumentar mis capacidades, y poder crear proyectos mas complejos, y poder adentrarme mucho más en el backend.
-							</div>
+							<br>
+							<br>
+							Me gustaría aprender a usar Node y React, para aumentar mis capacidades, y poder crear proyectos mas complejos, y poder adentrarme mucho más en el backend.
 						</p>
-						<div>
-							<a class="btn btn-outline-secondary mx-3 w-75 my-1" href="#home">Ir a la página de inicio</a>
-							<a class="btn btn-outline-secondary mx-3 w-75 my-1" href="#projects">Quieres ver mi trabajo?</a>
+						<div class="my-3 mx-auto d-block w-75">
+							<a class="btn btn-outline-secondary w-100 my-2" href="#home">Ir a la página de inicio</a>
+							<a class="btn btn-outline-secondary w-100 my-2" href="#projects">Quieres ver mi trabajo?</a>
 						</div>
 					</div>
 				</section>
+			</div>
+			<div class="vh-100">
+				<section class="h-100 d-flex flex-column justify-content-center" id="projects">
+					<div class="container w-75 text-center">
+						<h3>Proyectos Que He Realizado</h3>
+						<p class="lead">
+							En esta sección puedes ver los proyectos (didácticos) que he realizado desde que comenzé en el desarrollo web.
+						</p>
+						<span class="d-none d-sm-block">
+							Tambien he hecho cosas pequeñas, las cuales las puedes encontrar en mi Codepen.
+						</span>
 
-
-
-
-
-				<section class="vh-100 d-flex flex-column justify-content-between col-12" id="projects">
-					<div class="w-100 text-center my-auto d-flex align-items-center">
-						<div class="mx-1">
-							<h3>Proyectos Que He Realizado</h3>
-							<p class="lead">
-								En esta sección puedes ver los proyectos (didácticos) que he realizado desde que comenzé en el desarrollo web.
-								<br>
-								<div class="d-sm-block d-none">
-									Actualmente me encuentro trabajando para una empresa, por lo que no he realizado más proyectos después de este úlitmo.
+						<div class="row g-3 mt-1 d-none d-md-flex">
+							<div class="col">
+								<div class="card h-100">
+									<img src="./assets/images/cq.webp" class="card-img-top card-img mt-1" alt="Country Quiz">
+									<div class="card-body">
+										<h5 class="card-title">Country Quiz</h5>
+										<div class="d-flex flex-column h-50">
+											<a href="https://3dgar-xd.github.io/Country-Quiz/" target="_blank" rel="noopener noreferrer" class="btn btn-orange w-100 my-1">Ver Proyecto</a>
+											<a href="https://github.com/3DGAR-XD/Country-Quiz.git" target="_blank" rel="noopener noreferrer" class="btn btn-outline-orange w-100 my-1">Ver Codigo fuente</a>
+										</div>
+									</div>
+									<div class="card-footer">
+										<small class="text-muted">Actualizado el 24/03/2022</small>
+									</div>
 								</div>
-							</p>
-							<span class="d-sm-block d-none">
-								Tambien he hecho cosas pequeñas, las cuales las puedes encontrar en mi Codepen.
-							</span>
-							<div class="row g-3 mt-1">
-								<div class="col-6">
-									<div class="card">
+							</div>
+							<div class="col">
+								<div class="card h-100">
+									<img src="./assets/images/guess.webp" class="card-img-top card-img mt-1" alt="Guess the number">
+									<div class="card-body">
+										<h5 class="card-title">Guess The Number</h5>
+										<div class="d-flex flex-column h-40">
+											<a href="https://3dgar-xd.github.io/Guess-The-Number/" target="_blank" rel="noopener noreferrer" class="btn btn-orange w-100 my-1">Ver Proyecto</a>
+											<a href="https://github.com/3DGAR-XD/Guess-The-Number.git" target="_blank" rel="noopener noreferrer" class="btn btn-outline-orange w-100 my-1">Ver Codigo fuente</a>
+										</div>
+									</div>
+									<div class="card-footer">
+										<small class="text-muted">Actualizado el 13/12/2021</small>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card h-100">
+									<img src="./assets/images/facebook.webp" class="card-img-top card-img mt-1" alt="Facebook Home Page 100% Js">
+									<div class="card-body">
+										<h5 class="card-title">Facebook Home Page en Javascript</h5>
+										<a href="https://github.com/3DGAR-XD/Facebook-Home-Page-100-Javascript.git" target="_blank" rel="noopener noreferrer" class="btn btn-outline-orange w-100 my-1">Ver Codigo fuente</a>
+									</div>
+									<div class="card-footer">
+										<small class="text-muted">Actualizado el 27/03/2022 (Correcciones)</small>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="carouselExampleIndicators" class="carousel carousel-dark slide d-block d-md-none mt-2" data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active" data-bs-interval="5000">
+									<div class="card w-75 mx-auto text-center">
 										<img src="./assets/images/cq.webp" class="card-img-top card-img" alt="Country Quiz">
 										<div class="card-body">
 											<h5 class="card-title">Country Quiz</h5>
 											<p class="card-text text-justify">Este es mi proyecto más complejo el cual he remodelado usando bootstrap, async-await y manejo de errores.</p>
 											<div class="d-flex h-50 align-items-center justify-content-around">
 												<a href="https://3dgar-xd.github.io/Country-Quiz/" target="_blank" rel="noopener noreferrer" class="btn btn-orange">Ver Proyecto</a>
-												<a href="https://github.com/3DGAR-XD/Country-Quiz.git" target="_blank" rel="noopener noreferrer" class="btn btn-outline-orange"><div class="d-sm-block d-none">Ver</div> Codigo fuente</a>
+												<a href="https://github.com/3DGAR-XD/Country-Quiz.git" target="_blank" rel="noopener noreferrer" class="btn btn-outline-orange">Ver Codigo fuente</a>
 											</div>
 										</div>
 										<div class="card-footer">
@@ -272,15 +295,15 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-6">
-									<div class="card">
+								<div class="carousel-item" data-bs-interval="5000">
+									<div class="card w-75 mx-auto text-center">
 										<img src="./assets/images/guess.webp" class="card-img-top card-img" alt="Guess the number">
 										<div class="card-body">
 											<h5 class="card-title">Guess The Number</h5>
 											<p class="card-text text-justify">Este es un proyecto donde profundize más la lógica y los eventos de Javascript, creando un minijuego de números</p>
 											<div class="d-flex h-40 align-items-center justify-content-around">
 												<a href="https://3dgar-xd.github.io/Guess-The-Number/" target="_blank" rel="noopener noreferrer" class="btn btn-orange">Ver Proyecto</a>
-												<a href="https://github.com/3DGAR-XD/Guess-The-Number.git" target="_blank" rel="noopener noreferrer" class="btn btn-outline-orange"><div class="d-sm-block d-none">Ver</div> Codigo fuente</a>
+												<a href="https://github.com/3DGAR-XD/Guess-The-Number.git" target="_blank" rel="noopener noreferrer" class="btn btn-outline-orange">Ver Codigo fuente</a>
 											</div>
 										</div>
 										<div class="card-footer">
@@ -288,13 +311,13 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-6 mx-auto">
-									<div class="card">
+								<div class="carousel-item" data-bs-interval="5000">
+									<div class="card w-75 mx-auto text-center">
 										<img src="./assets/images/facebook.webp" class="card-img-top card-img" alt="Facebook Home Page 100% Js">
 										<div class="card-body">
 											<h5 class="card-title">Facebook Home Page en Javascript</h5>
-											<p class="card-text text-justify">El proyecto que me ayudo a entender como funciona Javascript. <div class="d-sm-block d-none">NO ES UN CLON DE FACEBOOK!! solo es la página de inicio hecha con lo primero que aprendí en Javascript</div> </p>
-											<a href="https://github.com/3DGAR-XD/Facebook-Home-Page-100-Javascript.git" target="_blank" rel="noopener noreferrer" class="btn btn-outline-orange"> <div class="d-sm-block d-none">Ver</div> Codigo fuente</a>
+											<p class="card-text text-justify">El proyecto que me ayudo a entender como funciona Javascript. NO ES UN CLON DE FACEBOOK!! solo es la página de inicio hecha con lo primero que aprendí en Javascript</p>
+											<a href="https://github.com/3DGAR-XD/Facebook-Home-Page-100-Javascript.git" target="_blank" rel="noopener noreferrer" class="btn btn-outline-orange">Ver Codigo fuente</a>
 										</div>
 										<div class="card-footer">
 											<small class="text-muted">Actualizado el 27/03/2022 (Correcciones)</small>
@@ -302,16 +325,24 @@
 									</div>
 								</div>
 							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+						<div class="mx-auto my-3 d-block w-75">
+							<a class="btn btn-outline-secondary w-100 my-2" href="#about-me">Ver Mis Conocimientos</a>
+							<a class="btn btn-outline-secondary w-100 my-2" href="#contact-me">Quieres contactarme?</a>
 						</div>
 					</div>
-					<div class="text-center my-2">
-						<a class="btn btn-outline-secondary my-1 mx-auto w-75" href="#contact-me">Quieres contactarme?</a>
-						<a class="btn btn-outline-secondary my-1 mx-auto w-75" href="#about-me">Ver Mis Conocimientos</a>
-					</div>
 				</section>
-
-
-				<header class="vh-100 d-flex flex-column justify-content-center col-12 my-5" id="home">
+			</div>
+			<div class="vh-100">
+				<header class="h-100 d-flex flex-column justify-content-center" id="home">
 					<div class="container w-75 text-center my-3">
 						<hgroup>
 							<h1 class="name">EDGAR LUNA</h1>
@@ -319,24 +350,53 @@
 						</hgroup>
 					</div>
 					<nav class="text-center">
-						<ul class="list-group d-inline-block">
-							<li class="d-inline mx-3"><a class="btn btn-orange" href="#about-me">Quieres saber quien soy ¡Clickeame!</a></li>
-							<li class="d-inline mx-3"><a class="btn btn-orange" href="#projects">¡Mira mis proyectos!</a></li>
-							<li class="d-inline mx-3"><a class="btn btn-orange" href="#contact-me">Vamos al grano ¡Contactame!</a></li>
+						<ul class="list-group d-block w-50 mx-auto">
+							<li class="d-block my-3"><a class="btn btn-orange w-100" href="#about-me">Quieres saber quien soy ¡Clickeame!</a></li>
+							<li class="d-block my-3"><a class="btn btn-orange w-100" href="#projects">¡Mira mis proyectos!</a></li>
+							<li class="d-block my-3"><a class="btn btn-orange w-100" href="#contact-me">Vamos al grano ¡Contactame!</a></li>
 						</ul>
 					</nav>
 				</header>
-
-
-
-
-
-
-
-
-				<div class="col-12 vh-100"></div>
 			</div>
-		</div> -->
+			<div class="vh-100">
+				<footer class="vh-100 d-flex flex-column justify-content-center" id="contact-me">
+					<div class="container w-75 text-center my-auto">
+						<h3>¿Te gustó mi portafolio?</h3>
+						<p class="lead">
+							¿Estas interesado en contactarme o ver algunos experimentos míos?
+							<br>
+							Aquí abajo te dejo mis datos de contacto y mis redes para que me puedas contactar.
+						</p>
+						<div class="row m-3 g-3 justify-content-evenly">
+							<a class="text-light me-2 col-6 w-75 badge bg-dark rounded-pill" href="https://codepen.io/3dgar-xd" target="_blank" rel="noopener noreferrer">
+								Mi CodePen
+								<img src="./assets/images/codepen.webp" alt="" class="img-contact">
+							</a>
+							<a class="text-light me-2 col-6 w-75 badge bg-primary rounded-pill" href="https://www.linkedin.com/in/3DGARXD/" target="_blank" rel="noopener noreferrer">
+								Mi LinkedIn
+								<img src="./assets/images/linkedin.webp" alt="" class="img-contact">
+							</a>
+							<a class="text-light me-2 col-6 w-75 badge bg-primary rounded-pill" href="https://drive.google.com/file/d/1ytP-4M9VJiJmHr-yrM49HCwwMRIks02Y/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+								Aquí te dejo mi CV si la deseas ver
+								<img src="./assets/images/curriculum.webp" alt="" class="img-contact">
+							</a>
+							<a class="text-light me-2 col-6 w-75 badge bg-dark rounded-pill" href="https://www.github.com/3DGAR-XD" target="_blank" rel="noopener noreferrer">
+								Mi Github
+								<img src="./assets/images/github.webp" alt="" class="img-contact">
+							</a>
+							<a class="text-light col-6 w-75 badge bg-primary rounded-pill" href="tel:+573108040812">
+								<img src="./assets/images/telefono.webp" alt="" class="img-contact me-2">
+								¿Te animas a llamarme?
+							</a>
+						</div>
+						<div class="my-3 mx-auto d-block w-75">
+							<a class="btn btn-outline-orange my-3 d-block" href="#projects">Quieres dar otro vistazo a mis proyectos?</a>
+							<a class="btn btn-outline-orange my-3 d-block" href="mailto:ejlc2001@gmail.com" target="_blank" rel="noopener noreferrer">Vamos,  ¡envíame un correo!</a>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
 		<script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
 		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
