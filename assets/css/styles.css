@@ -175,3 +175,8 @@ a {
 		width: 15%;
 	}
 }
+@media (max-width:500px) {
+        #mobile footer div.row a{
+                width:100%;
+        }
+}
