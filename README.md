@@ -9,7 +9,7 @@ This is a portfolio where are my most relevant projects that are this.
 1. Basic Web Stack = Intermediate
 2. Git = Basic
 3. Linux = Basic
-4. Jquery and Bootstrap = Basic- Intermediate
+4. Jquery and Bootstrap = Basic-Intermediate
 5. Backend = Basic
 6. Databases = Basic
 ## My social networks
